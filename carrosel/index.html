@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Cor de fundo azul para a página */
+        body {
+            background-color: #007bff; /* Cor azul */
+        }
+
+        /* Ajuste para tornar as imagens redondas */
+        .carousel-item img {
+            width: 250px; /* Define o tamanho desejado */
+            height: 250px; /* Mantém a altura igual para formar o círculo */
+            border-radius: 50%; /* Torna as imagens redondas */
+            object-fit: contain; /* Ajusta a imagem sem cortá-la */
+            margin: 0 auto; /* Centraliza as imagens */
+            display: block; /* Garante que a imagem seja tratada como bloco */
+        }
+        
+        /* Ajustes nas legendas */
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura para contraste */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Estilizando os botões */
+        .btn-primary {
+            background-color: #9b30ff; /* Tom de roxo mais claro para os botões */
+            border-color: #9b30ff; /* Mesma cor para a borda */
+        }
+
+        /* Melhorando o contraste do texto */
+        .carousel-caption h5, .carousel-caption p {
+            color: #fff; /* Cor branca para o texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/457282760_1157775965319874_1567234168690509904_n.jpg?ccb=11-4&oh=01_Q5AaII3-1qq6SyAmST0fmApk-LIrEmvfBoP8mmr8dqleKhYp&oe=6751580C&_nc_sid=5e03e0&_nc_cat=100" class="d-block w-100" alt="Imagem 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>José Pereira Gonçalves Neto</h5>
+                        <p>José Pereira Gonçalves Neto é estudante do curso de Ciência da Computação, com interesse em aprender e aplicar conhecimentos em áreas como desenvolvimento de software, algoritmos e programação. Seu objetivo é se tornar um profissional altamente capacitado, contribuindo para o avanço da tecnologia e inovação no campo da computação.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="Arthur Aguiar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Arthur Aguiar</h5>
+                        <p>Arthur Aguiar é um talentoso desenvolvedor que trabalha como <strong>programador da Amazon</strong>. Com uma sólida formação em ciência da computação, ele tem se destacado por sua capacidade de resolver problemas complexos e otimizar processos através de código eficiente. Sua paixão pela tecnologia e pela criação de soluções escaláveis o motiva a buscar constantemente novos desafios e aprimorar suas habilidades.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
